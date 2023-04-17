@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Space Tourism - SK Blue</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<style>
+		body {
+			margin: 0;
+			padding: 0;
+			height: 1000px; /* Set the height of the page to show the parallax effect */
+			background: linear-gradient(to top, #0d101e,#151731, #131531, #17153f, #1a2253, #000000);
+            background-image: linear-gradient(rgba(12, 15, 27, 0.7),rgba(4,9,30,0.7)),url("Images/Galaxy.jpg");/* Set the background image */
+			background-size: cover; /* Make the background image cover the entire page */
+			background-attachment: fixed; /* Fix the background image so it does not move */
+		}
+		.container {
+            transform: translateY(-110px);
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 100px 0;
+		}
+		.box {
+			position: relative;
+			height: 900px;
+			background-image: url("box.jpg");
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+			overflow: hidden;
+		}
+        @media(max-width: 700px){
+        .box{
+            height:2500px ;
+        }
+        }
+		.box-inner {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0,0,0,1);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0,1 )),url(Images/Earth.jpg);
+            background-repeat: repeat-y; /* or repeat-x, repeat-y, repeat, etc. */
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #fff;
+			font-size: 40px;
+			font-weight: bold;
+		}
+		.box-inner h1 {
+			margin: 0;
+			padding: 0;
+		}
+	</style>
+    <style>
+		
+		.container2 {
+            transform: translateY(-10px);
+			max-width: 1200px;
+			margin: 0 auto;
+			
+		}
+		.box2 {
+			position: relative;
+			height: 300px;
+			background-image: url("box.jpg");
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+			overflow: hidden;
+		}
+		.box-inner2 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0,0,0,0.5);
+            
+            background-size: cover;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #fff;
+			font-size: 40px;
+			font-weight: bold;
+		}
+		.box-inner2 h1 {
+			margin: 0;
+			padding: 0;
+		}
+	</style>
+</head>
+    <body>
+        <section class="header2">
+            <nav>
+                <a href="index.html"><img src="Images/All_Blue-removebg-preview.png" height="100" width="100"  alt=""></a>
+                <div class="nav-links" id="navLinks">
+                    <img class="fa" src="Images/barsblack-removebg-preview.png" height="30" width="30" onclick="hideMenu()">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="About Us.html">ABOUT</a></li>
+                        <li><a href="SignUp.html">SIGN UP</a></li>
+                        <li><a href="SafetyRecovery.html">SAFETY AND RECOVERY</a></li>
+                        <li><a href="Pricing.html">PRICING</a></li>
+                        <li><a href="ContactUs.html">CONTACT US</a></li>
+                        <li><a href="Refrences.html">REFRENCES</a></li>
+                    </ul>
+                </div>
+                <img class ="fa" src="Images/barsblack-removebg-preview.png" height="30" width="30" onclick="showMenu()">
+            </nav>
+            <div class="text-box2">
+                <h2>About Us</h1>   
+                <!--<a href="" class="hero-btn">Visit us to know more</a>-->             
+            </div>
+        </section>
+
+        <div class="containerTimeline">
+            <div class="top-section">
+                <div class="fade-in-text">
+                    
+                <h1>Our History</h1>
+                <p>All Blue is a cutting-edge space tourism company that was founded in 2020 by a group of visionary entrepreneurs with a shared passion for space exploration. With a mission to provide unparalleled space travel experiences, All Blue quickly gained a reputation for offering the world's best space tourism.</p>
+                </div>
+            </div>
+
+            <div class="timeline">
+                <div class="line"></div>
+                <div class="section"></div>
+                <div class="bead"></div>
+                <div class="content">
+                    <h2>All Blue founded 2010</h2>
+                    <p>"All Blue" is a leading space tourism company that was founded in 2010 with a vision!</p>
+                    <img src="Images/BlastOff.jpg" alt="" height="300" width="350">
+                </div>
+
+
+
+                <div class="section"></div>
+                <div class="bead"></div>
+                <div class="content">
+                    <h2>First Passenger 2016</h2>
+                    <p>In 2016, "All Blue" made history by taking its first passengers on board "Blue Rides" for an unforgettable space tour. This marked a significant milestone in the company's journey towards making space travel accessible to a wider audience.</p>
+                    <img src="Images/international-space-station-gc0b9e0667_1280.jpg" alt="" height="250" width="350">
+                </div>
+
+                <div class="section"></div>
+                <div class="bead"></div>
+                <div class="content">
+                    <h2>1 week tour 2018</h2>
+                    <p>In 2018, "All Blue" achieved another remarkable feat by allowing passengers to stay on the International Space Station (ISS) for a whole week. This provided a once-in-a-lifetime opportunity for customers to experience life in space and witness the wonders of the universe up close.</p>
+                    <img src="Images/space-walk-g3715b068b_1280.jpg" alt="" height="250" width="350">
+                </div>
+
+
+                <div class="section"></div>
+                <div class="bead"></div>
+                <div class="content">
+                    <h2>Biggest Space Tourism Agency 2020</h2>
+                    <p>By 2020, "All Blue" had established itself as the biggest space tourism company in the world, with a reputation for delivering unmatched space travel experiences. The company's commitment to innovation, safety, and customer satisfaction had earned it a loyal following of space enthusiasts from around the globe.</p>
+                </div>
+
+        </div>
+        <!-- Welcome to the Future 
+        <div class="container2">
+            <div class="box2">
+                <div class="box-inner2">
+                    <section class="Future">
+                        <h3 class="htext-future">"Space tourism is a logical outgrowth of the adventure tourist market"</h3>
+                        <p class="ptext-future"><strong>-Buzz Aldrin</strong></p>
+                </div>
+            </div>
+        </div>
+        
+
+         home
+
+                
+            </div>
+        </section>
+    <div class="container">
+		<div class="box">
+			<div class="box-inner">
+				<section class="course">
+                    <h1>Programs we offer</h1>
+                    <p class="white-ptext">Welcome to All Blue, the premier provider of space tourism experiences! Our program offers both a 15-minute tour and a one-week tour in space, giving you the opportunity to see the world from a truly unique perspective.</p>
+               
+                    <div class="row">
+                        <div class="course-col">
+                            <h3>15 minute tour</h3>
+                            <p>Our 15-minute tour takes you on a thrilling ride to the edge of space, where you'll experience weightlessness and get a stunning view of the Earth below. This tour is perfect for those who want a taste of space travel without committing to a longer trip.</p>
+                        </div>
+                        <div class="course-col">
+                            <h3>Safety First</h3>
+                            <p>All Blue's commitment to safety and customer satisfaction has earned them a reputation as one of the most reliable and trustworthy space tourism companies in the world. With a team of highly trained professionals and cutting-edge technology, All Blue is ready to take you on a journey that you'll never forget.</p>
+                        </div>
+                        <div class="course-col">
+                            <h3>1 week tour</h3>
+                            <p>Passengers spend seven days in space, orbiting the Earth every 90 minutes and witnessing spectacular views of the planet's surface. During their journey, passengers will also participate in scientific experiments, explore the spacecraft's amenities, and enjoy gourmet space food prepared by All Blue's expert culinary team.</p>
+                        </div>
+			</div>
+		</div>
+	</div>
+    --->
+    <!-- Footer -->
+    <section class="footer">
+        <h5>About Us</h5>
+        <p>All Blue is a pioneering company at the forefront of the space tourism industry. With a passion for exploration and a commitment to pushing the boundaries of human travel, All Blue is dedicated to making space tourism accessible to all.</p>
+        <div class="icons">
+            <img src="Images/insta-removebg-preview.png" alt="" width="45" height="41.5">
+            <img src="Images/facebook-removebg-preview.png" alt="" width="45" height="45">
+            <img src="Images/twitter-removebg-preview.png" alt="" width="50" height="40">
+        </div>
+    </section>
+
+<script src="timeline.js"></script>
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right = "-770px"
+    }
+    function hideMenu(){
+        navLinks.style.right = "-2000px"
+    }
+
+</script>
+<script>
+
+    window.addEventListener('scroll', function() {
+        var fadeText = document.querySelector('.fade-in-text');
+        var fadeTextPosition = fadeText.getBoundingClientRect().top;
+        var screenPosition = window.innerHeight / 1.2;
+      
+        if (fadeTextPosition < screenPosition) {
+          fadeText.classList.add('show');
+        }
+      });
+    
+    </script>
+    <script>
+    
+    window.addEventListener('scroll', function() {
+        var textAnimation = document.querySelector('.text-animation');
+        var textAnimationPosition = textAnimation.getBoundingClientRect().top;
+        var screenPosition = window.innerHeight / 1.2;
+      
+        if (textAnimationPosition < screenPosition) {
+          textAnimation.classList.add('show');
+        }
+      });
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Space Tourism - SK Blue</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<style>
+		body {
+			margin: 0;
+			padding: 0;
+			height: 1000px; /* Set the height of the page to show the parallax effect */
+			background: linear-gradient(to top, #0d101e,#151731, #131531, #17153f, #1a2253, #000000);
+            background-image: linear-gradient(rgba(12, 15, 27, 0.7),rgba(4,9,30,0.7)),url("Images/Galaxy.jpg");/* Set the background image */
+			background-size: cover; /* Make the background image cover the entire page */
+			background-attachment: fixed; /* Fix the background image so it does not move */
+		}
+		.container {
+            transform: translateY(-110px);
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 100px 0;
+		}
+		.box {
+			position: relative;
+			height: 900px;
+			background-image: url("box.jpg");
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+			overflow: hidden;
+		}
+        @media(max-width: 700px){
+        .box{
+            height:2500px ;
+        }
+        }
+		.box-inner {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0,0,0,1);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0,1 )),url(Images/Earth.jpg);
+            background-repeat: repeat-y; /* or repeat-x, repeat-y, repeat, etc. */
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #fff;
+			font-size: 40px;
+			font-weight: bold;
+		}
+		.box-inner h1 {
+			margin: 0;
+			padding: 0;
+		}
+	</style>
+    <style>
+		
+		.container2 {
+            transform: translateY(-10px);
+			max-width: 1200px;
+			margin: 0 auto;
+			
+		}
+		.box2 {
+			position: relative;
+			height: 300px;
+			background-image: url("box.jpg");
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+			overflow: hidden;
+		}
+		.box-inner2 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0,0,0,0.5);
+            
+            background-size: cover;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #fff;
+			font-size: 40px;
+			font-weight: bold;
+		}
+		.box-inner2 h1 {
+			margin: 0;
+			padding: 0;
+		}
+	</style>
+    <style>
+		
+		.container3 {
+            transform: translateY(-10px);
+			max-width: 1200px;
+			margin: 0 auto;
+			
+		}
+		.box3 {
+			position: relative;
+			height: 700px;
+			background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0,1 )),url(Images/purpleSky.jpg);
+            transform: rotate(180deg);
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+			overflow: hidden;
+		}
+		.box-inner3 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0,0,0,0.5);
+            
+            background-size: cover;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #fff;
+			font-size: 40px;
+			font-weight: bold;
+		}
+		.box-inner3 h1 {
+			margin: 0;
+			padding: 0;
+		}
+	</style>
+</head>
+    <body>
+        <section class="header3">
+            <nav>
+                <a href="index.html"><img src="Images/All_Blue-removebg-preview.png" height="100" width="100"  alt=""></a>
+                <div class="nav-links" id="navLinks">
+                    <img class="fa" src="Images/barsblack-removebg-preview.png" height="30" width="30" onclick="hideMenu()">
+                    <ul>
+						<li><a href="index.html">HOME</a></li>
+                        <li><a href="About Us.html">ABOUT</a></li>
+                        <li><a href="SignUp.html">SIGN UP</a></li>
+                        <li><a href="SafetyRecovery.html">SAFETY AND RECOVERY</a></li>
+                        <li><a href="Pricing.html">PRICING</a></li>
+                        <li><a href="ContactUs.html">CONTACT US</a></li>
+                        <li><a href="Refrences.html">REFRENCES</a></li>
+                    </ul>
+                </div>
+                <img class ="fa" src="Images/barsblack-removebg-preview.png" height="30" width="30" onclick="showMenu()">
+            </nav>
+            <div class="text-box2">
+                <h2>Contact Us</h1>   
+                <!--<a href="" class="hero-btn">Visit us to know more</a>-->             
+            </div>
+        </section>
+
+        <div class="container3">
+            <div class="box3">
+                <div class="box-inner3">
+                    <section class="contact-info">
+                        <h2>Contact Information</h2>
+                        <p>123 Main Street<br>
+                            Rockaway Beach, NY, 11693<br>
+                        Phone: (123) 456-7890<br>
+                        Email: AllBlue@gmail.com</p>
+                        <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.651389004398!2d-73.98571838459324!3d40.74881774070344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x19c44d6f687308a4!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1619875108642!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </section>
+            </div>
+        </div>
+        
+                
+    
+
+        
+        
+
+         
+    
+    
+    <section class="footer">
+        <h5>About Us</h5>
+        <p>All Blue is a pioneering company at the forefront of the space tourism industry. With a passion for exploration and a commitment to pushing the boundaries of human travel, All Blue is dedicated to making space tourism accessible to all.</p>
+        <div class="icons">
+            <img src="Images/insta-removebg-preview.png" alt="" width="45" height="41.5">
+            <img src="Images/facebook-removebg-preview.png" alt="" width="45" height="45">
+            <img src="Images/twitter-removebg-preview.png" alt="" width="50" height="40">
+        </div>
+    </section>
+
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right = "-770px"
+    }
+    function hideMenu(){
+        navLinks.style.right = "-2000px"
+    }
+
+</script>
+
+
+    </body>
+</html>

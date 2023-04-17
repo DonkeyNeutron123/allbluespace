@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Space Tourism - SK Blue</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<style>
+		body {
+			margin: 0;
+			padding: 0;
+			height: 1000px; /* Set the height of the page to show the parallax effect */
+			background: linear-gradient(to top, #0d101e,#151731, #131531, #17153f, #1a2253, #000000);
+            background-image: linear-gradient(rgba(12, 15, 27, 0.7),rgba(4,9,30,0.7)),url("Images/Galaxy.jpg");/* Set the background image */
+			background-size: cover; /* Make the background image cover the entire page */
+			background-attachment: fixed; /* Fix the background image so it does not move */
+		}
+		.container {
+            transform: translateY(-350px);
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 100px 0;
+		}
+		.box {
+			position: relative;
+			height: 700px;
+			background-image: url("box.jpg");
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+			overflow: hidden;
+		}
+        @media(max-width: 700px){
+        .box{
+            height:2500px ;
+        }
+        }
+		.box-inner {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0,0,0,1);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0,1 )),url(Images/Earth.jpg);
+            background-repeat: repeat-y; /* or repeat-x, repeat-y, repeat, etc. */
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #fff;
+			font-size: 40px;
+			font-weight: bold;
+		}
+		.box-inner h1 {
+			margin: 0;
+			padding: 0;
+		}
+	</style>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			height: 1000px; /* Set the height of the page to show the parallax effect */
+			background: linear-gradient(to top, #0d101e,#151731, #131531, #17153f, #1a2253, #000000);
+            background-image: linear-gradient(rgba(12, 15, 27, 0.7),rgba(4,9,30,0.7)),url("Images/Galaxy.jpg");/* Set the background image */
+			background-size: cover; /* Make the background image cover the entire page */
+			background-attachment: fixed; /* Fix the background image so it does not move */
+		}
+		.containerSafety {
+            transform: translateY(-110px);
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 100px 0;
+		}
+		.boxSafety {
+			position: relative;
+			height: 900px;
+			background-image: url("box.jpg");
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+			overflow: hidden;
+		}
+        @media(max-width: 700px){
+        .boxSafety{
+            height:2500px ;
+        }
+        }
+		.box-innerSafety {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0,0,0,1);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0,1 )),url(Images/space-walk-g3715b068b_1280.jpg);
+            background-repeat: repeat-y; /* or repeat-x, repeat-y, repeat, etc. */
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #fff;
+			font-size: 40px;
+			font-weight: bold;
+		}
+		.box-innerSafety h1 {
+			margin: 0;
+			padding: 0;
+		}
+	</style>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			height: 1000px; /* Set the height of the page to show the parallax effect */
+			background: linear-gradient(to top, #0d101e,#151731, #131531, #17153f, #1a2253, #000000);
+            background-image: linear-gradient(rgba(12, 15, 27, 0.7),rgba(4,9,30,0.7)),url("Images/Galaxy.jpg");/* Set the background image */
+			background-size: cover; /* Make the background image cover the entire page */
+			background-attachment: fixed; /* Fix the background image so it does not move */
+		}
+		.containerPricing {
+            transform: translateY(-110px);
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 100px 0;
+		}
+		.boxPricing {
+			position: relative;
+			height: 900px;
+			background-image: url("box.jpg");
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+			overflow: hidden;
+		}
+        @media(max-width: 700px){
+        .boxPricing{
+            height:2500px ;
+        }
+        }
+		.box-innerPricing {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0,0,0,1);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0,0.1 )),url(Images/gradient2.png);
+			background-size: cover;
+			
+            background-repeat: repeat-y; /* or repeat-x, repeat-y, repeat, etc. */
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #fff;
+			font-size: 40px;
+			font-weight: bold;
+		}
+		.box-innerPricing h1 {
+			margin: 0;
+			padding: 0;
+		}
+	</style>
+    <style>
+		
+		.container2 {
+            transform: translateY(-10px);
+			max-width: 1200px;
+			margin: 0 auto;
+			
+		}
+		.box2 {
+			position: relative;
+			height: 300px;
+			background-image: url("box.jpg");
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+			overflow: hidden;
+		}
+		.box-inner2 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0,0,0,0.5);
+            
+            background-size: cover;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #fff;
+			font-size: 40px;
+			font-weight: bold;
+		}
+		.box-inner2 h1 {
+			margin: 0;
+			padding: 0;
+		}
+	</style>
+    <style>
+		
+		.containerP {
+            transform: translateY(-10px);
+			max-width: 1200px;
+			margin: 0 auto;
+			
+		}
+		.boxP {
+			position: relative;
+			height: 300px;
+			background-image: url("box.jpg");
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+			overflow: hidden;
+		}
+		.box-innerP {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0,0,0,0.5);
+            background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(Images/astronaut.jpg);;
+           
+            background-size: cover;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #fff;
+			font-size: 40px;
+			font-weight: bold;
+		}
+		.box-innerP h1 {
+			margin: 0;
+			padding: 0;
+		}
+	</style>
+</head>
+    <body>
+        <section class="header5">
+            <nav>
+                <a href="index.html"><img src="Images/All_Blue-removebg-preview.png" height="100" width="100"  alt=""></a>
+                <div class="nav-links" id="navLinks">
+                    <img class="fa" src="Images/barsblack-removebg-preview.png" height="30" width="30" onclick="hideMenu()">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="About Us.html">ABOUT</a></li>
+                        <li><a href="SignUp.html">SIGN UP</a></li>
+                        <li><a href="SafetyRecovery.html">SAFETY AND RECOVERY</a></li>
+                        <li><a href="Pricing.html">PRICING</a></li>
+                        <li><a href="ContactUs.html">CONTACT US</a></li>
+                        <li><a href="Refrences.html">REFRENCES</a></li>
+                    </ul>
+                </div>
+                <img class ="fa" src="Images/barsblack-removebg-preview.png" height="30" width="30" onclick="showMenu()">
+            </nav>
+            <div class="text-box">
+                <h1><thin class="white">ACTIVITIES THAT ARE IN THE</thin> <strong class="blue">BLUE</strong></h1>
+                <p>You will be engraved in the FUTURE!</p>
+                <a href="SignUp.html" class="hero-btn">PURSHASE NOW</a>
+            </div>
+        </section>
+
+        <!-- Welcome to the Future -->
+          
+        <div class="containerP">
+            <div class="boxP">
+                <div class="box-innerP">
+                    <section class="Future">
+                        <div class="text-animation">
+                            <h1 class="textP"><thin>SAFETY</thin></h1>
+                            <h3 class="textPO">Your safety is ensured during and after the journey. Prior to the journey, you will receive basic training and learn how the basic features of the ship work. Our Blue Crew Suit (BCS) and Blue Spacewalk Suit (BSS) are both carefully crafted to ensure the safety of both the tour guide and the tourist; they are lightweight, mobile, durable, and UV blocking; all suits include survival gear in the case of unexpected situations. Our tour guide is highly trained to control the rocket as well as the roving vehicle, and you will be trained for emergencies.</h3>
+                            
+                          </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!--- home -->
+                
+            </div>
+        </section>
+    <div class="container3">
+		<div class="box3">
+			<div class="box-inner3">
+				<section class="course">
+                    <div class="fade-in-text">
+						<h1>Launch Procedures</h1>
+                        <p>The Tourists will board the Spacecraft 5-7 hours before the takeoff. The process of boarding begins several hours before the launch when which you go through a series of checks and preparations, like putting on a Space Suit, Medical checks, and reviewing the plan and process for the tour. One all the checks and preparations is done, you are then transported to the launch site where the spacecraft is. You then board the spacecraft and put on your seatbelts. During this time the Astronaut onboard with you will do a series of checks to ensure everything is working how it is supposed to. Once this is completed countdown begins and the engine are ignited.
+						</p>
+						
+							</div>
+						  </div>
+						</div>
+					</div>
+				</div>
+				<div class="containerSafety">
+					<div class="boxSafety">
+						<div class="box-innerSafety">
+							<section class="course">
+								
+									<h1>RECOVERY</h1>
+									<p class="white">When returning back to Earth, you can experience a lot of physical to physiological changes because of the microgravity and many other factors. You will have to undergo a process of medical evaluation and rehabilitation due to not being used gravity and such. After exiting the Spacecraft you are then brought to a Medical Center that will check your vital signs, blood pressure, and heart rate. You also go through a trial of medical tests that checks your bone density, muscle strength, and cardiovascular health, as well as your vision and balance. You will need to do rehab for 3-5 days to regain strength and balance. You will also go talk to mental health professional to make sure you are getting used to Earth psychologically.</p>
+									
+										
+									  </div>
+									</div>
+								</div>
+							</div>
+												<div class="container">
+													<div class="box">
+														<div class="box-inner">
+															<section class="course">
+																
+																	
+															   
+																	<section class="campus">
+																		<h1>ACTIVITIES</h1>
+																		<p class="white-ptext">On the 1 week tour you will enjoy many activites and have an awsome adventure!</p>
+																   
+																		<div class="row">
+																			<div class="campus-col">
+																				<img src="Images/roverFinal.jpg" alt=""width="350" height="350" >
+																				<div class="layer">
+																					<h3>LUNAR ROVER</h3>
+																				</div>
+																			</div>
+																			<div class="campus-col">
+																				<img src="Images/space-walk-g3715b068b_1280.jpg" alt=""width="350" height="350" >
+																				<div class="layer">
+																					<h3>MOON WALKS</h3>
+																				</div>
+																			</div>
+																			<div class="campus-col">
+																				<img src="Images/Science.jpg" alt=""width="350" height="350" >
+																				<div class="layer">
+																					<h3>SCIENCE EXPERIMENTS</h3>
+																				</div>
+																			</div>
+																		</div>
+																		
+																			
+																		
+																	
+															   
+														</div>
+													</div>
+												</div>
+												
+    <!-- Footer -->
+    <section class="footer">
+        <h5>About Us</h5>
+        <p>All Blue is a pioneering company at the forefront of the space tourism industry. With a passion for exploration and a commitment to pushing the boundaries of human travel, All Blue is dedicated to making space tourism accessible to all.</p>
+        <div class="icons">
+            <img src="Images/insta-removebg-preview.png" alt="" width="45" height="41.5">
+            <img src="Images/facebook-removebg-preview.png" alt="" width="45" height="45">
+            <img src="Images/twitter-removebg-preview.png" alt="" width="50" height="40">
+        </div>
+    </section>
+
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right = "-770px"
+    }
+    function hideMenu(){
+        navLinks.style.right = "-2000px"
+    }
+
+</script>
+<script>
+
+window.addEventListener('scroll', function() {
+    var fadeText = document.querySelector('.fade-in-text');
+    var fadeTextPosition = fadeText.getBoundingClientRect().top;
+    var screenPosition = window.innerHeight / 1.2;
+  
+    if (fadeTextPosition < screenPosition) {
+      fadeText.classList.add('show');
+    }
+  });
+
+</script>
+<script>
+
+window.addEventListener('scroll', function() {
+    var textAnimation = document.querySelector('.text-animation');
+    var textAnimationPosition = textAnimation.getBoundingClientRect().top;
+    var screenPosition = window.innerHeight / 1.2;
+  
+    if (textAnimationPosition < screenPosition) {
+      textAnimation.classList.add('show');
+    }
+  });
+    </script>
+  
+
+    </body>
+</html>
